@@ -1,0 +1,94 @@
+{
+  "data" : {
+    "light" : {
+      "id": "T_001",
+      "name": "Light",
+      "colors": {
+        "body": "#F5F5F5",
+        "text": "#2b2b2b",
+        "button": {
+          "text": "#FFFFFF",
+          "background": "#2b2b2b"
+        }
+      }
+    },
+
+    "dark" : {
+    "id": "T_002",
+    "name": "Dark",
+    "colors": {
+      "body": "#2b2b2b",
+      "text": "#dbd9d9",
+      "button": {
+        "text": "#2b2b2b",
+        "background": "#dbd9d9"
+      }
+    }
+  },
+
+    "darkBlue" : {
+      "id": "T_003",
+      "name": "darkBlue",
+      "colors": {
+        "body": "#0e1b5c",
+        "text": "#ffffff",
+        "button": {
+          "text": "#ffffff",
+          "background": "#f68038"
+        }
+      }
+    },
+
+    "material" : {
+      "id": "T_004",
+      "name": "Material",
+      "colors": {
+        "body": "#6a1b9a",
+        "text": "#ebdbf5",
+        "button": {
+          "text": "#6a1b9a",
+          "background": "#ebdbf5"
+        }
+      }
+    },
+
+    "calm" : {
+      "id": "T_006",
+      "name": "Calm",
+      "colors": {
+        "body": "#80cbc4",
+        "text": "#002b24",
+        "button": {
+          "text": "#FFFFFF",
+          "background": "#002b24"
+        }
+      }
+    },
+
+    "cherryBonBon" : {
+      "id": "T_007",
+      "name": "Cherry Bon Bon",
+      "colors": {
+        "body": "#c62828",
+        "text": "#ffeeed",
+        "button": {
+          "text": "#c62828",
+          "background": "#ffeeed"
+        }
+      }
+    },
+
+    "seaWave" : {
+      "id": "T_008",
+      "name": "Sea Wave",
+      "colors": {
+        "body": "#9be7ff",
+        "text": "#0d47a1",
+        "button": {
+          "text": "#ffffff",
+          "background": "#0d47a1"
+        }
+      }
+    }
+  }
+}
