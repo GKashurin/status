@@ -1,18 +1,20 @@
 import React from 'react';
-import {Redirect, Route, Switch} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 import About from "../pages/About";
-import Posts from "../pages/Posts";
 import Error from "../pages/Error";
 import PostIdPage from "../pages/PostIdPage";
+
+const LazyPosts = React.lazy(() => import('../pages/Posts'))
+const LazyAbout = React.lazy(() => import('../pages/About'))
 
 const AppRouter = () => {
 	return (
 		<Switch>
 			<Route path="/about">
-				<About />
+				<LazyAbout />
 			</Route>
 			<Route exact path="/posts">
-				<Posts />
+				<LazyPosts />
 			</Route>
 			<Route exact path="/posts/:id">
 				<PostIdPage />
@@ -21,7 +23,7 @@ const AppRouter = () => {
 			<Route path="/error">
 				<Error />
 			</Route>
-			<Redirect to="/error"/>
+			{/* <Redirect to="/error"/> */}
 		</Switch>
 	);
 };
