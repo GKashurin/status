@@ -3,6 +3,7 @@ import {Route, Switch} from "react-router-dom";
 import About from "../pages/About";
 import Error from "../pages/Error";
 import PostIdPage from "../pages/PostIdPage";
+import Posts from "../pages/Posts";
 
 const LazyPosts = React.lazy(() => import('../pages/Posts'))
 const LazyAbout = React.lazy(() => import('../pages/About'))
@@ -11,10 +12,10 @@ const AppRouter = () => {
 	return (
 		<Switch>
 			<Route path="/about">
-				<LazyAbout />
+				<About />
 			</Route>
 			<Route exact path="/posts">
-				<LazyPosts />
+				<Posts />
 			</Route>
 			<Route exact path="/posts/:id">
 				<PostIdPage />
